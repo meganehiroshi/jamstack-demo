@@ -14,6 +14,7 @@ const BlogPage = ({ data }) => (
         __html: `${data.microcmsMeganeblog.content}`,
       }}
     />
+    <img src={data.microcmsMeganeblog.mainVisual.url} alt="test" />
   </Layout>
 )
 
@@ -26,6 +27,9 @@ export const query = graphql`
       date
       title
       content
+      mainVisual {
+        url
+      }
     }
   }
 `
