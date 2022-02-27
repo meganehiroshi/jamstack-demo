@@ -14,7 +14,7 @@ const BlogPage = ({ data }) => (
     </Helmet>
     <SEO title={data.microcmsMeganeblog.title} />
     <span>{data.microcmsMeganeblog.date}</span>
-    <h1>{data.microcmsMeganeblog.title}</h1>
+    <h1>title:{data.microcmsMeganeblog.title}</h1>
     <div
       dangerouslySetInnerHTML={{
         __html: `${data.microcmsMeganeblog.content}`,
