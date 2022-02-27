@@ -10,9 +10,7 @@ import { withPrefix, Link } from "gatsby"
 const BlogPage = ({ data }) => (
   <Layout>
     <Helmet>
-
-        <script src={withPrefix('../../../static/js/jquery-3.6.0.min.js')} type="text/javascript" />
-        <script src={withPrefix('../../../static/js/clova.js')} type="text/javascript" />
+            <script src={withPrefix('../../../static/js/clova.js')} type="text/javascript" defer />
     </Helmet>
     <SEO title={data.microcmsMeganeblog.title} />
     <span>{data.microcmsMeganeblog.date}</span>
