@@ -9,7 +9,7 @@
 //import $ from 'jquery'
 const $ = require("jquery")
 
-exports.onInitialClientRender = ({ location }) => {
+exports.onRouteUpdate = ({ location }) => {
   // ここにコード
   console.log("onRouteUpdate");
   // $(window).on('load', function() {
